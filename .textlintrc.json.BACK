@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "latex2e": true
+  },
+  "filters": {},
+  "rules": {
+    "preset-ja-engineering-paper": true,
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": true,
+    "preset-japanese": true,
+    "preset-jtf-style": true,
+    "spellcheck-tech-word": true
+  }
+}

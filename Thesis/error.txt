@@ -1,0 +1,26 @@
+redpen_test.tex:1: ValidationError[ParagraphNumber], The number of paragraphs exceeds the maximum of 9. at line: テスト
+redpen_test.tex:33: ValidationError[VoidSection], The section is void. at line: 空の節
+redpen_test.tex:5: ValidationError[JapaneseNumberExpression], Found invalid number expression "ひとつ". at line: まずは，ひとつの文章（センテンス）に，どれぐらいの文字を書くことができるかについてチェックする．
+redpen_test.tex:7: ValidationError[SentenceLength], The length of the sentence (114) exceeds the maximum of 100. at line: ふたつの側面からエラーが出力され，ひとつのセンテンスは全角の文字としては100字の文字が記載されると SentenceLength エラーとなり，あるいは50以上の単語が記載されると WordNumber のエラーも表示される．
+redpen_test.tex:7: ValidationError[WordNumber], The number of words (55) exceeds the maximum of 50. at line: ふたつの側面からエラーが出力され，ひとつのセンテンスは全角の文字としては100字の文字が記載されると SentenceLength エラーとなり，あるいは50以上の単語が記載されると WordNumber のエラーも表示される．
+redpen_test.tex:7: ValidationError[JapaneseNumberExpression], Found invalid number expression "ふたつ". at line: ふたつの側面からエラーが出力され，ひとつのセンテンスは全角の文字としては100字の文字が記載されると SentenceLength エラーとなり，あるいは50以上の単語が記載されると WordNumber のエラーも表示される．
+redpen_test.tex:7: ValidationError[JapaneseNumberExpression], Found invalid number expression "ひとつ". at line: ふたつの側面からエラーが出力され，ひとつのセンテンスは全角の文字としては100字の文字が記載されると SentenceLength エラーとなり，あるいは50以上の単語が記載されると WordNumber のエラーも表示される．
+redpen_test.tex:13: ValidationError[JapaneseAmbiguousNounConjunction], Found ambiguous noun conjunction: "...本屋の棚の上..." at line: たとえば，本屋の棚の上の猫は JapaneseAmbiguousNoumonjunctionエラーとなる．
+redpen_test.tex:11: ValidationError[InvalidSymbol], Found invalid symbol "、". at line: 句読点として、全角の「，」と「．
+redpen_test.tex:11: ValidationError[InvalidSymbol], Found invalid symbol "。". at line: 」を使わない場合は InvalidSymbolエラーになる。助詞が連続している場合にはエラーを出す．
+redpen_test.tex:10: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 今回の設定では，この文章のように，4つを超えて読点が使われると，CommaNumberエラーを表示するように，設定をしている．
+redpen_test.tex:11: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 」を使わない場合は InvalidSymbolエラーになる。助詞が連続している場合にはエラーを出す．
+redpen_test.tex:13: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: たとえば，本屋の棚の上の猫は JapaneseAmbiguousNoumonjunctionエラーとなる．
+redpen_test.tex:16: ValidationError[KatakanaEndHyphen], Found invalid Katakana end-hypen "コンピューター". at line: たとえば，コンピューターは KatakanaEndHyphenエラーになる．
+redpen_test.tex:16: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: たとえば，コンピューターは KatakanaEndHyphenエラーになる．
+redpen_test.tex:19: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: TeXで文章を書いているとき，空白行があるとパラグラフが変わる．
+redpen_test.tex:20: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 節の中にパラグラフの数が 9個以上になると，ParagraphNumberエラーを出す．
+redpen_test.tex:22: ValidationError[DoubleNegative], Found double negative expression "ExpressionRule{elements=[TokenElement{surface='なく', tags=[], offset=0, reading='なく'}, TokenElement{surface='は', tags=[], offset=0, reading='は'}, TokenElement{surface='ない', tags=[], offset=0, reading='ない'}]}" at line: この DoubleNegativeエラーを発生する文章は，二重否定の文章といえなくはない．
+redpen_test.tex:22: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: この DoubleNegativeエラーを発生する文章は，二重否定の文章といえなくはない．
+redpen_test.tex:24: ValidationError[Okurigana], Found an invalid Okurigana expression "費し" at line: 費やしては送り仮名が合っていますが，費しては送り仮名が間違えている為， Okuriganaエラーとなります．
+redpen_test.tex:24: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 費やしては送り仮名が合っていますが，費しては送り仮名が間違えている為， Okuriganaエラーとなります．
+redpen_test.tex:26: ValidationError[JapaneseAmbiguousNounConjunction], Found ambiguous noun conjunction: "...いまの品質の検査..." at line: いまから文書の品質の検査をしますのように格助詞の「の」が複数回利用されている場合にはエラーとなります．
+redpen_test.tex:28: ValidationError[JapaneseStyle], Found invalid Japanese Style "です" at line: しかし，名前はまだないです．
+redpen_test.tex:35: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 節に説明がなく，いきなり小節を書くと VoidSectionエラーとなる．
+redpen_test.tex:46: ValidationError[SpaceBetweenAlphabeticalWord], Space not present after an alphabetical word. at line: 送り仮名が間違えている場合，Okuriganaエラーを出す．
+

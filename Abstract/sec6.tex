@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt,twocolumn]{jsarticle}
+\usepackage{myjlababsstyle}
+\begin{document}
+\section{Visual Studio Codeで編集する人へ}
+Visual Studio Codeを使って \LaTeX 論文を作成する人が増えているため，それに合わせた修正を各所でおこなっている．
+以下の設定や，注意事項を参照してほしい．
+
+\subsection{コンパイルのための設定}
+\LaTeX をコンパイルする際には，目次や参照，参考文献などを組み込むための処理などを複数回実行する必要がある．
+これを自動で判断して実行するための設定ファイルが \verb+.latexmkrc+である．
+本スタイルファイルパッケージでは，以下の設定をしている．
+\begin{screen}
+{\small
+\begin{verbatim}
+#!/usr/bin/env perl
+$pdf_mode = 3;
+$latex = 'platex -halt-on-error';
+$bibtex = 'pbibtex';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+\end{verbatim}
+}
+\end{screen}
+
+なお，一部の行を割愛して表示している．
+詳細は，直接ファイルを確認してほしい．
+
+\subsection{LaTeX Workshop の設定}
+VSCodeプラグインであるLaTeX Workshopの設定は，以下の様にしている．
+なお，必ずしも同じ設定にする必要はない．
+\begin{screen}
+{\footnotesize
+\begin{verbatim}
+"latex-workshop.latex.tools": [
+  {
+    "name": "Latexmk (pLaTeX)",
+    "command": "latexmk",
+    "args": [
+      "-f",
+      "-gg",
+      "-pv",
+      "-latex='platex'",
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "%DOC%"
+    ]
+  },
+],
+\end{verbatim}
+}
+\end{screen}
+\begin{screen}
+    {\footnotesize
+    \begin{verbatim}
+"latex-workshop.latex.recipes": [
+  {
+    "name": "pLaTeX",
+    "tools": [
+      "Latexmk (pLaTeX)"
+    ]
+  },
+],
+\end{verbatim}
+}
+\end{screen}
+\begin{screen}
+{\footnotesize
+\begin{verbatim}
+"latex-workshop.latex.magic.args": [
+  "-f",
+  "-gg",
+  "-pv",
+  "-synctex=1",
+  "-interaction=nonstopmode",
+  "-file-line-error",
+  "%DOC%"
+],
+\end{verbatim}
+}
+\end{screen}
+\begin{screen}
+{\footnotesize
+\begin{verbatim}
+"latex-workshop.view.pdf.viewer":"tab",
+"latex-workshop.latex.autoBuild.run": "never",
+"latex-workshop.view.pdf.refviewer":"tabOrBrowser",
+"latex-workshop.latex.autoClean.run":"onBuilt",
+\end{verbatim}
+}
+\end{screen}
+
+\subsection{分割（子ファイル）コンパイル}
+通常の \LaTeX のファイルの場合に親ファイルに記述する文書開始や終了／スタイルファイルの読み込みを子ファイル側に書き込むことによって，それぞれのファイルごとにコンパイルができる．
+
+\begin{screen}
+{\footnotesize
+\begin{verbatim}
+\documentclass[a4paper,10pt,twocolumn]{jsarticle}
+\usepackage{myjlababsstyle}
+\begin{document}
+\section{これは読み込まれる子ファイルの例}
+ファイル名は sub.tex とします．
+\end{document}
+\end{verbatim}
+}
+\end{screen}
+
+これを読み込む親ファイル側では，これらの設定を無視するようにしなければならない．
+そのために，\verb+docmute+パッケージを用いている．
+親ファイルの例を以下に示す．
+\begin{screen}
+{\footnotesize
+\begin{verbatim}
+\documentclass[a4paper,10pt,twocolumn]{jsarticle}
+\usepackage{docmute}
+\usepackage{myjlababsstyle}
+\begin{document}
+これは親ファイルの例です．
+\input{sub}
+\end{document}
+\end{verbatim}
+}
+\end{screen}
+
+また，多くのスタイルファイルを親ファイルと子ファイルで共通して読み込むために，スタイルファイルを \verb+myjlababsstyle.sty+ ファイル内に列挙している．
+各自でスタイルファイルを追加する場合には，このファイルに記載すること．
+
+\subsection{テキスト校正くん}
+「テキスト校正くん」パッケージは追加すべきである．
+ただし，\LaTeX のファイルは校正してくれないため，\verb+txt+か\verb+md+のファイルを作成し，そこに文章を貼り付けて校正するのが良い．
+インストールや設定などが必要ない「テキスト校正くん」を利用することにしたが，昨年まではRedpenと比較して細かい部分の校正は不十分である．
+最低限の校正として必ず利用してほしい．
+%
+\end{document}

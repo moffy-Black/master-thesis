@@ -1,0 +1,44 @@
+
+
+
+Local file for Macintosh
+-----------------------
+cd
+cd Desktop
+cd RonbunMYJ2022/Thesis
+./mklatex.bat
+
+
+cd 
+cd Desktop
+cd RonbunMYJ2022/Abstract
+./mklatex.bat
+
+
+
+for Windows
+-----------
+cd
+cd Desktop
+cd RonbunMYJ2022\Thesiscd
+winmklatex.bat
+
+
+cd
+cd Desktop
+cd RonbunMYJ2022\Abstract
+winmklatex.bat
+
+
+
+for Docker
+-----------
+cd
+cd Desktop
+cd RonbunMYJ2022/Thesis
+docker run -i -t --rm -v $PWD:/thesis myutaka3/ubuntu-texlive_full /thesis/dmklatex.bat
+
+cd
+cd Desktop
+cd RonbunMYJ2022/Abstract
+docker run -i -t --rm -v $PWD:/abstract myutaka3/ubuntu-texlive_full /abstract/dmklatex.bat
