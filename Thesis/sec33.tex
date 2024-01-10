@@ -1,0 +1,41 @@
+\section{検定方法}
+検定方法について述べる．Brunner-Munzel検定\cite{1361981469031994624}を利用した．
+Brunner-Munzel検定はノンパラメトリック検定の1つで，2標本の母集団分布の同一性を検定するための手法である．
+帰無仮説は2標本の母集団から1つずつ標本を取り出したときに，どちらが大きい確率も等しくなることである．
+つまり，以下の数式3.1において
+\begin{math}
+  p=0.5
+\end{math}
+となることである．対立仮説は2標本の母集団から1つずつ標本を取り出したときに，どちらが大きい確率も等しくならないことであり，
+\begin{math}
+  p\neq0.5
+\end{math}
+になることである．
+
+\begin{equation}
+  p = P(X < Y) + \frac{1}{2}P(X = Y)
+\end{equation}
+
+本研究の実験に置き換えると，XとYは天気予報グループとシステムグループから得られた回答データを表している．
+また，効果量は
+\begin{math}
+  P(X < Y) + \frac{1}{2}P(X = Y)
+\end{math}
+の計算結果である．
+Rで利用できるBrunner-Munzel検定のライブラリ\cite{cranBrunnerMunzel}を利用して検定する．
+% すなわち，効果量が高ければ高いほどシステムグループは天気予報グループより脅威評価が高かったと言える．
+% 具体的に本研究においては，Rで利用できるBrunner-Munzel検定のライブラリを利用して検定する．
+% 井口豊によると，この検定の効果量はCohen's dと以下の表のような対応関係があるとされている．
+
+% \begin{table}[h]
+%   \caption{Brunner-Munzel 検定の効果量と Cohen's d の関係}
+%   \centering
+%   \begin{tabular}{|c|c|c|c|}
+%   \hline
+%   \multicolumn{1}{|c|}{効果量} &  \multicolumn{1}{c|}{小} &  \multicolumn{1}{c|}{中} &  \multicolumn{1}{c|}{大}\\
+%   \hline \hline
+%   Cohen's d & 0.2 & 0.5 & 0.8 \\ \hline
+%   \shortstack{Stochastic\\ superiority} & 0.56 & 0.64 & 0.71\\ \hline
+%   \end{tabular}
+%   \label{table:resultEx1}
+% \end{table}

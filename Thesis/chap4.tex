@@ -3,138 +3,29 @@
 \input{settings}
 \begin{document}
 
-\chapter{Visual Studio Codeで編集する人へ}
-Visual Studio Codeを使って \LaTeX 論文を作成する人が増えているため，それに合わせた修正を各所でおこなっている．
-以下の設定や，注意事項を参照してほしい．
+\chapter{おわりに}
+本章では本研究のまとめと今後の展望について述べる．
 
-\section{コンパイルのための設定}
-\LaTeX をコンパイルする際には，目次や参照，参考文献などを組み込むための処理などを複数回実行する必要がある．
-これを自動で判断して実行するための設定ファイルが \verb+.latexmkrc+である．
-本スタイルファイルパッケージでは，以下の設定をしている．
-\begin{screen}
-{\small
-\begin{verbatim}
-#!/usr/bin/env perl
-$pdf_mode = 3;
-$latex = 'platex -halt-on-error';
-$bibtex = 'pbibtex';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-\end{verbatim}
-}
-\end{screen}
+\section{まとめ}
+本研究は気象庁が発表する早期注意情報を利用し，訪日観光客が風水害の影響を受ける前に情報を提供することで，防災行動を促す効果があることを明らかにする研究であった．
+この研究を行なった背景は，訪日観光客が台風などの風水害の現象を想起することが難しく，現状の情報提供方法は日本住民向けであるため，訪日観光客に理解し難いことであった．
+原因はストック情報が既知でなく，フロー情報を理解できないことであった．
+ストック情報とはこれまでの教育や訓練などで人に蓄積された災害に関する情報である．
+フロー情報はある特定の災害に対する災害についての説明と避難の呼びかけの情報である．
+その問題に対して，訪日観光客の旅行計画に基づいて訪日中に災害の影響を受けるか監視し，影響がある場合ストック情報とフロー情報を提供するシステムを提案した．
+新規性は情報提供するタイミングが余裕を持って行うことと，ストック情報を知らなくても理解しやすい情報を提供していることである．
+気象庁が提供している天気予報の情報とシステムが提供する情報を比較することで，比較実験をおこなった．
+実験参加者は全て日本人である．
+防護動機理論という理論に基づいて，指標は脅威評価の災害の深刻さに対する認知と災害発生の確率に対する認知とした．
+過去の災害の情報から，実験用の旅程を2つ作成した．1日先に災害の可能性が認められる旅程と2日先に災害の可能性が認められる旅程である．
+実験の結果，どちらの旅程においても天気予報から情報を得た実験参加者より，システムをから情報を得た実験参加者の脅威評価の方が高いと判明した．
+さらに，システムはより未来の旅行日程に対して天気予報よりも脅威評価を高まらせる効果がある．
+したがって，システムは天気予報と比較するとより高い脅威評価を与える効果があり，事前に防災行動を促すことが見込める．
 
-なお，一部の行を割愛して表示している．
-詳細は，直接ファイルを確認してほしい．
-
-情報源として，以下の2サイトを記載する．
-Macintosh だけでなく，WindowsやLinuxでの利用（特にプレビュー）を含めた設定については，\verb+@popunbom+氏のQiitaの記事「VSCode で LaTeX を書く (2018)」~\cite{popunbom1}が詳しい．
-LaTeXをインストールしたり，利用したりする際の情報源である \TeX Wiki にも「Visual Studio Code/LaTeX」~\cite{texwikivscode}なるページがある．
-
-\section{LaTeX Workshop の設定}
-VSCodeプラグインであるLaTeX Workshopの設定は，以下の様にしている．
-なお，必ずしも同じ設定にする必要はない．
-\begin{screen}
-{\footnotesize
-\begin{verbatim}
-"latex-workshop.latex.tools": [
-  {
-    "name": "Latexmk (pLaTeX)",
-    "command": "latexmk",
-    "args": [
-      "-f",
-      "-gg",
-      "-pv",
-      "-latex='platex'",
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "%DOC%"
-    ]
-  },
-],
-\end{verbatim}
-}
-\end{screen}
-\begin{screen}
-    {\footnotesize
-    \begin{verbatim}
-"latex-workshop.latex.recipes": [
-  {
-    "name": "pLaTeX",
-    "tools": [
-      "Latexmk (pLaTeX)"
-    ]
-  },
-],
-\end{verbatim}
-}
-\end{screen}
-\begin{screen}
-{\footnotesize
-\begin{verbatim}
-"latex-workshop.latex.magic.args": [
-  "-f",
-  "-gg",
-  "-pv",
-  "-synctex=1",
-  "-interaction=nonstopmode",
-  "-file-line-error",
-  "%DOC%"
-],
-\end{verbatim}
-}
-\end{screen}
-\begin{screen}
-{\footnotesize
-\begin{verbatim}
-"latex-workshop.view.pdf.viewer":"tab",
-"latex-workshop.latex.autoBuild.run": "never",
-"latex-workshop.view.pdf.refviewer":"tabOrBrowser",
-"latex-workshop.latex.autoClean.run":"onBuilt",
-\end{verbatim}
-}
-\end{screen}
-
-\section{分割（子ファイル）コンパイル}
-通常の \LaTeX のファイルの場合に親ファイルに記述する文書開始や終了／スタイルファイルの読み込みを子ファイル側に書き込むことによって，それぞれのファイルごとにコンパイルができる．
-
-\begin{screen}
-{\footnotesize
-\begin{verbatim}
-\documentclass[a4paper,10pt,twocolumn]{jsarticle}
-\usepackage{myjlababsstyle}
-\begin{document}
-\section{これは読み込まれる子ファイルの例}
-ファイル名は sub.tex とします．
-\end{document}
-\end{verbatim}
-}
-\end{screen}
-
-これを読み込む親ファイル側では，これらの設定を無視するようにしなければならない．
-そのために，\verb+docmute+パッケージを用いている．
-親ファイルの例を以下に示す．
-\begin{screen}
-{\footnotesize
-\begin{verbatim}
-\documentclass[a4paper,10pt,twocolumn]{jsarticle}
-\usepackage{docmute}
-\usepackage{myjlababsstyle}
-\begin{document}
-これは親ファイルの例です．
-\input{sub}
-\end{document}
-\end{verbatim}
-}
-\end{screen}
-
-また，多くのスタイルファイルを親ファイルと子ファイルで共通して読み込むために，スタイルファイルを \verb+myjlababsstyle.sty+ ファイル内に列挙している．
-各自でスタイルファイルを追加する場合には，このファイルに記載すること．
-
-\section{テキスト校正くん}
-「テキスト校正くん」パッケージは追加すべきである．
-ただし，\LaTeX のファイルは校正してくれないため，\verb+txt+か\verb+md+のファイルを作成し，そこに文章を貼り付けて校正するのが良い．
-インストールや設定などが必要ない「テキスト校正くん」を利用することにしたが，昨年まではRedpenと比較して細かい部分の校正は不十分である．
-最低限の校正として必ず利用してほしい．
+\section{今後の展望}
+今回の実験は日本人を対象としておこなったので，訪日観光客に防災行動を促すという目的を達成できたとは言えない．
+今後の展望として，外国人を対象とした評価実験を行う必要がある．
+また，システムで提供する情報も外国語化する必要がある．
+そして，提供する情報についても文献から確認できた情報のみに基づいて作成されたので，訪日観光客に使用してもらった感想を聞き，精錬していきたい．
 %
 \end{document}

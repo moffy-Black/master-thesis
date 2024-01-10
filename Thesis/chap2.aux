@@ -1,36 +1,99 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {第2章}宮治研用 \LaTeX  スタイルパッケージの使い方}{4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第2章}システムについて}{7}}
 \@writefile{lof}{\addvspace {10\jsc@mpt }}
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}\LaTeX  を利用する理由}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}\LaTeX  を利用するメリット/デメリット}{4}}
-\citation{test}
-\citation{mactex}
-\citation{w32tex}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}デメリットを解決する = 本パッケージの利用}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}ファイル構成}{6}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces スタイルパッケージ内のファイル説明}}{7}}
-\newlabel{table:files2}{{2.1}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}settings.tex： 論文の設定情報を記述}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}各自の情報設定}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{サブタイトル有りの場合}{7}}
-\@writefile{toc}{\contentsline {subsubsection}{サブタイトル無しの場合}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}スタイルパッケージの動作確認}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}main.tex： 大元となり，論文構成を記述}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}論文要旨の読み込み}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}謝辞の読み込み}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}目次の設定}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}各章の読み込み}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}付録の設定と読み込み}{11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.6}参考文献の設定と読み込み}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}システム概要}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces システムの全体概要図}}{7}}
+\newlabel{fig:system_summary}{{2.1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}クライアント部}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{旅程データの入力機能}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{注意情報提供機能}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}データベース部}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{データ保存機能}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{データ提供機能}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}バッチ処理部}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{気象庁から注意情報の取得}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{旅程データの取得}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{注意情報と旅程データを照合}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{クライアント部へ通知指示}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}処理の流れ}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces システムのアクティビティ図}}{11}}
+\newlabel{fig:activity}{{2.2}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}環境}{11}}
+\citation{Flutter}
+\citation{GoogleMap}
+\citation{TrainData}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}利用技術}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}クライアント部}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{Flutter}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{Google Place API}{12}}
+\citation{Geocoding}
+\citation{Firebase}
+\@writefile{toc}{\contentsline {subsubsection}{鉄道データ}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{位置参照情報}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{外部ライブラリ}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}データベース部}{13}}
+\citation{KishoutyouXML}
+\@writefile{toc}{\contentsline {subsubsection}{Cloud Firestore}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}バッチ処理部}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{気象庁防災情報XML}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{cron}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{外部ライブラリ}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}使用方法}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}アプリを起動する}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces 通常時のホーム画面}}{16}}
+\newlabel{fig:normal_home_screen}{{2.3}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}旅程パッケージを作成する}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces 旅程パッケージ画面}}{17}}
+\newlabel{fig:travel_pack_list}{{2.4}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces 旅程パッケージ作成画面}}{17}}
+\newlabel{fig:travel_pack_create}{{2.5}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}旅程データを作成する}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces 旅程データ画面}}{18}}
+\newlabel{fig:travel_data_list}{{2.6}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{場所データの作成}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces 場所データの作成画面}}{19}}
+\newlabel{fig:spot_data_save}{{2.7}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{交通機関データの作成}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces 鉄道の路線を検索する画面}}{20}}
+\newlabel{fig:railway_search}{{2.8}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces 利用する駅を保存する画面}}{20}}
+\newlabel{fig:trans_data_save}{{2.9}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}通知を受け取る}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces 通知の表示}}{21}}
+\newlabel{fig:notion}{{2.10}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces 災害注意予報通知時のホーム画面}}{21}}
+\newlabel{fig:unormal_home_screen}{{2.11}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}災害注意予報を確認する}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces 災害注意予報が出ている旅程データの一覧}}{22}}
+\newlabel{fig:advisory_data_list}{{2.12}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{場所データの災害注意予報}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces 場所データの災害注意予報画面}}{23}}
+\newlabel{fig:spot_advisory}{{2.13}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{交通データの災害注意予報}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces 交通データの災害注意予報画面1}}{24}}
+\newlabel{fig:trans_advisory_1}{{2.14}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces 交通データの災害注意予報画面2}}{24}}
+\newlabel{fig:trans_advisory_2}{{2.15}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.6}ストック情報を確認する}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{雨の災害の情報}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces 雨のストック情報提供画面1}}{25}}
+\newlabel{fig:rain_stock_1}{{2.16}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces 雨のストック情報提供画面2}}{25}}
+\newlabel{fig:rain_stock_2}{{2.17}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{風の災害の情報}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces 風のストック情報提供画面1}}{26}}
+\newlabel{fig:rain_stock_1}{{2.18}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces 風のストック情報提供画面2}}{26}}
+\newlabel{fig:rain_stock_2}{{2.19}{26}}
 \@setckpt{chap2}{
-\setcounter{page}{13}
+\setcounter{page}{27}
 \setcounter{equation}{0}
-\setcounter{enumi}{4}
+\setcounter{enumi}{6}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{1}
+\setcounter{footnote}{0}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{2}
@@ -39,8 +102,8 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
-\setcounter{table}{1}
+\setcounter{figure}{19}
+\setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{subfigure}{0}
 \setcounter{lofdepth}{1}

@@ -1,70 +1,181 @@
 \begin{thebibliography}{10}
 
-\bibitem{test}
-Twitter Inc.
-\newblock Tex manual.
+\bibitem{Typhoon}
+サーベイリサーチセンター.
+\newblock 台風19号の災害情報等における事前対応に関する訪日外国人調査, 2019.
 \newblock
-  \url{http://hs.hc.uec.ac.jp/index.php?plugin=attach&refer=Tex&openfile=TeXマニュアル.pdf}~(ref
-  2013-10-31).
+  \url{https://www.surece.co.jp/wp_surece/wp-content/uploads/2019/10/PressRelease20191017.pdf}~(参照
+  2024-1-8).
 
-\bibitem{mactex}
-奥村~晴彦他.
-\newblock Tex wiki mac.
+\bibitem{1050565163716925056}
+ヤスコタムラ, ユキタツミ, カズミアダチ, ジュンコミヤモト, Yasuko Tamura, Yuki
+  Tatsumi, Kazumi Adachi, Junko Miyamoto.
 \newblock
-  MacTeXインストールの概略，\url{https://texwiki.texjp.org/?MacTeX}~(参照
-  2019-10-26).
+  日本における外国人旅行者の被災状況に関する分析～インターネット上で公開されている2018年および2019年に発生した災害の資料より～.
+\newblock 神戸女子大学看護学部紀要, Vol.~5, pp. 23--36, 03 2020.
 
-\bibitem{w32tex}
-奥村~晴彦他.
-\newblock Tex wiki w32tex.
-\newblock \url{https://texwiki.texjp.org/?W32TeX}~(参照 2019-10-16).
+\bibitem{hounitilabo}
+訪日ラボ.
+\newblock 【台風21号】大阪ホステルに聞いた
+  災害時の外国人対応「欧米人は『台風珍しい！動画撮りたい！』と外に出たがり静止するのが大変だった…」／国によって異なる災害への反応,
+  2018.
+\newblock \url{https://honichi.com/news/2018/09/12/osakadamageinterview/}~(参照
+  2024-1-8).
 
-\bibitem{HTUlatex}
-電気通信大学佐藤研究室.
-\newblock Tex マニュアル.
+\bibitem{nihonhousou}
+ニッポン放送.
+\newblock 西日本豪雨～避難指示が60万人に及んだ京都府現地での被害状況, 2018.
+\newblock \url{https://news.1242.com/article/148867}~(参照 2024-1-8).
+
+\bibitem{nihonkeizaisinbun}
+日本経済新聞.
+\newblock 台風10号が西日本縦断　1人死亡40人けが、uターン直撃, 2019.
 \newblock
-  \url{http://hs.hc.uec.ac.jp/index.php?plugin=attach&refer=Tex&openfile=TeXマニュアル.pdf}~(参照
-  2013-10-31).
+  \url{https://www.nikkei.com/article/DGXMZO48573920V10C19A8000000/}~(参照
+  2024-1-8).
 
-\bibitem{Kogami2009}
-湖上潤, 宮治裕, 富山健.
-\newblock 人間共生ロボットにおける擬似感性システムの構築と評価.
-\newblock 日本感性工学会論文誌, pp. 601--609, September 2009.
+\bibitem{Tamura2017}
+田村太郎.
+\newblock
+  災害時における外国人への対応~支援の対象だけでなく、担い手としての外国人への視点を~.
+\newblock 自治体国際化フォーラム, Vol. 332, , 06 2017.
 
-\bibitem{miyaji2010}
-宮治亨.
-\newblock 理系のための「即効！」論文術.
-\newblock 講談社, 2010.
+\bibitem{1050574047089440256}
+涼菜中本, 遼太谷岡, 孝吉野.
+\newblock
+  Vrを用いた被災体験とその対策を繰り返すことによる防災教育システムの提案.
+\newblock 2017年度 情報処理学会関西支部 支部大会 講演論文集, Vol. 2017, p.~6p,
+  09 2017.
 
-\bibitem{WelfareJapan}
-富山健, 宮治裕.
-\newblock 介護者支援ロボットシステムの提案.
-\newblock  小原信, 神長勲（編）, 日本の福祉, 第13章, pp. 301--329. 以文社, July
-  2001.
-\newblock (ISBN4-7531-0217-3).
+\bibitem{1520577741138112640}
+義朗田中, 亮鎌田, 小一郎竹島, 孝明加藤.
+\newblock Bleビーコンを活用した津波避難訓練行動モニタリングシステムの開発 :
+  伊豆市土肥大藪地区におけるスタディ.
+\newblock 地域安全学会論文集, 38・39, pp. 61--71, 2021.
 
-\bibitem{Nakata2010}
-中田亨.
-\newblock 理系のための「即効！」論文術.
-\newblock 講談社, 2010.
+\bibitem{1050292572101475584}
+板宮朋基, 吉岡英樹, 大山昌彦, 小川高志.
+\newblock
+  津波避難行動支援スマートフォンアプリ「デジタル皆助ナビ」の開発と高知県黒潮町における実証実験.
+\newblock 第75回全国大会講演論文集, Vol. 2013, No.~1, pp. 515--516, 03 2013.
 
-\bibitem{Miyaji2003ROMAN}
-Yutaka Miyaji and Ken Tomiyama.
-\newblock Construction of virtual kansei by petri-net with ga and method of
-  constructing personality.
-\newblock In {\em Proceedings ROMAN2003, 12th IEEE Workshop Robot and Human
-  Interactive Communication}, pp. 6B4(CD--ROM), November 2003.
+\bibitem{1050855522101622784}
+直人江守, 善雄仲谷, 朋子泉, 尊義北村.
+\newblock 観光客の行動パターンを考慮した避難誘導方法検討支援システム.
+\newblock 第78回全国大会講演論文集, Vol. 2016, No.~1, pp. 151--152, 03 2016.
 
-\bibitem{popunbom1}
-@popunbom.
-\newblock Qiita: Vscode で latex を書く (2018).
-\newblock \url{https://qiita.com/popunbom/items/7d02fc75ad23b735d28c}~(参照
-  2019-10-26).
+\bibitem{1050011097136129280}
+健太片山, 真悟横山, 匠加藤, 秀幸高橋, 信英横田, 和也杉安, 哲男木下.
+\newblock 避難行動支援向けエージェント型iotシステムの検討.
+\newblock 第79回全国大会講演論文集, Vol. 2017, No.~1, pp. 593--594, 03 2017.
 
-\bibitem{texwikivscode}
-奥村~晴彦他.
-\newblock Tex wiki visual studio code/latex.
-\newblock \url{https://texwiki.texjp.org/?Visual%20Studio%20Code%2FLaTeX}~(参照
-  2019-10-25).
+\bibitem{1390569634314138496}
+直輝小林, 達也山^^ef^^a8^^91, 翔輔佐藤.
+\newblock 避難シミュレーションにおける局所的情報を扱う避難誘導システムの提案.
+\newblock 日本シミュレーション学会論文誌, Vol.~13, No.~1, pp. 23--31, 2021.
+
+\bibitem{1390574181079225984}
+彰鶴島.
+\newblock リスクと多目的を考慮した視覚的避難誘導標識の割当て.
+\newblock 人工知能学会全国大会論文集, Vol. JSAI2022, No.~0, pp.
+  4N3GS502--4N3GS502, 2022.
+
+\bibitem{1050292572101463552}
+^^e6^^bf^^b5村朱里, 福島拓, 吉野孝, 江種伸之.
+\newblock 災害直後の避難支援を目的とした常時利用型災害時支援システムの開発.
+\newblock 第75回全国大会講演論文集, Vol. 2013, No.~1, pp. 815--816, 03 2013.
+
+\bibitem{1520856738287330432}
+友孝和田, 華奈前川, 一弘大月.
+\newblock
+  緊急救命避難支援システムにおける複数箇所の災害発生を考慮した避難誘導方式.
+\newblock 災害情報 = Journal of disaster information studies :
+  日本災害情報学会誌, No.~19, pp. 121--131, 07 2021.
+
+\bibitem{SafetyTips}
+国土交通省観光庁.
+\newblock プッシュ型情報発信アプリ「safety tips」概要, 2020.
+\newblock \url{https://www.mlit.go.jp/common/001101175.pdf}~(参照 2024-1-8).
+
+\bibitem{Windy}
+WINDY.APP.
+\newblock Windyとはなにか？
+\newblock \url{https://windy.app/ja}~(参照 2024-1-8).
+
+\bibitem{1390855511130932864}
+沙灯子志垣, 孝吉野, 隼人永井, 楓佐野, リッチーブレント.
+\newblock 外国人観光客を対象とした防災知識提供システムにおける情報提示手法.
+\newblock 情報処理学会論文誌, Vol.~62, No.~1, pp. 204--213, 01 2021.
+
+\bibitem{1050292572146543616}
+真輝坂本, 孝吉野, 隼人永井, 楓佐野, リッチーブレント.
+\newblock 観光客を対象としたweb閲覧時に防災情報にさらすシステムの評価.
+\newblock ワークショップ2018 （GN Workshop 2018) 論文集, Vol. 2018, pp. 1--6,
+  11 2018.
+
+\bibitem{Flutter}
+Flutter.
+\newblock Build for any screen.
+\newblock \url{https://flutter.dev/}~(参照 2024-1-8).
+
+\bibitem{GoogleMap}
+Google~Mpas Platform.
+\newblock Place api 概要.
+\newblock
+  \url{https://developers.google.com/maps/documentation/places/web-service/overview?hl=ja}~(参照
+  2024-1-8).
+
+\bibitem{TrainData}
+国土数値情報ダウンロードサイト.
+\newblock 鉄道データ.
+\newblock
+  \url{https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N02-v2_3.html}~(参照
+  2024-1-8).
+
+\bibitem{Geocoding}
+国土数値情報ダウンロードサイト.
+\newblock 街区レベル位置参照情報とは.
+\newblock \url{https://nlftp.mlit.go.jp/isj/index.html}~(参照 2024-1-8).
+
+\bibitem{Firebase}
+Firebase.
+\newblock Cloud firestore.
+\newblock \url{https://firebase.google.com/docs/firestore?hl=ja}~(参照
+  2024-1-8).
+
+\bibitem{KishoutyouXML}
+国土交通省気象庁.
+\newblock 気象庁防災情報xmlフォーマット　情報提供ページ.
+\newblock \url{https://xml.kishou.go.jp/}~(参照 2024-1-8).
+
+\bibitem{1360292618739561728}
+Ronald~W. Rogers.
+\newblock A protection motivation theory of fear appeals and attitude change1.
+\newblock {\em The Journal of Psychology}, Vol.~91, No.~1, pp. 93--114, 09
+  1975.
+
+\bibitem{1570572700020740224}
+RW. ROGERS.
+\newblock Cognitive and physiological processes in fear appeals and attitude
+  change : A revised theory of protection motivation.
+\newblock {\em Social Psychology : A Source Book}, pp. 153--176, 1983.
+
+\bibitem{Kakimoto2014}
+柿本竜治, 金華永, 吉田護, 藤見俊夫.
+\newblock 予防的避難の阻害要因と促進要因に関する分析.
+\newblock 都市計画論文集, Vol.~49, No.~3, pp. 321--326, 2014.
+
+\bibitem{1361981469031994624}
+Brunner Edgar and Munzel Ullrich.
+\newblock The nonparametric behrens-fisher problem: Asymptotic theory and a
+  small-sample approximation.
+\newblock {\em Biometrical Journal}, Vol.~42, No.~1, pp. 17--25, 01 2000.
+
+\bibitem{cranBrunnerMunzel}
+CRAN.
+\newblock brunnermunzel: (permuted) brunner-munzel test.
+\newblock
+  \url{https://cran.r-project.org/web/packages/brunnermunzel/index.html}~(参照
+  2024-1-8).
 
 \end{thebibliography}

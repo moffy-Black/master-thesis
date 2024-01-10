@@ -1,113 +1,82 @@
-\section{settings.tex： 論文の設定情報を記述}
-settings.tex には，各自の個人情報や論文のタイトルなどを設定する．
+\section{利用技術}
 
-\subsection{各自の情報設定}
-各自の情報を設定する際には，サブタイトルの有り／無しで設定事項が異なることに注意をする必要がある．
-それぞれの方法について以下に記述する．
-また，これらの作業が終わった時点で，本配布スタイルパッケージの動作確認をすることをおすすめする．
+本研究のシステムに利用した技術を構成ごとに述べる．
 
-\subsubsection{サブタイトル有りの場合}
-配布したファイルは，サブタイトルがある場合のサンプルになっている．
-各自の 年度，提出年月，学籍番号，氏名，タイトル，サブタイトルを所定の命令内に記入する．
-\begin{breakbox}
-{\small
-%footnotesize
-\begin{verbatim}
-\nendo{2013年度}
-\teisyutsu{2014年~~1月}
-\snum{15387019}
-\jname{宮治 裕}
-\thesistitle{宮治研における論文作成について} %タイトルを記入
-\thesissubtitle{\LaTeX の利用} %サブタイトルを記入 ない場合はコメントアウト
-\SUBTtrue %サブタイトル有りの場合 ない場合は，コメントアウト
-%\SUBTfalse %サブタイトル無しの場合 有る場合は，コメントアウト
-\end{verbatim}
-}
-\end{breakbox}
+\subsection{クライアント部}
+クライアント部で利用した技術に関して述べる．
 
-\subsubsection{サブタイトル無しの場合}
-サブタイトル有りの場合と比較して2箇所の変更が必要である．
-サブタイトルを記入する命令の先頭部分に \% 記号を入れ，コメントアウト状態にする．
+\subsubsection{Flutter}
+Flutter\cite{Flutter}とは，2017年にGoogleによって作られたマルチプラットフォームアプリケーションの開発フレームワークである．
+本研究では，iOSとAndroid両方のプラットフォームで動作するモバイルアプリケーションを開発するために利用した．
 
-\begin{breakbox}
-{\small
-\begin{verbatim}
-%\thesissubtitle{\LaTeX の利用} %サブタイトルを記入 無い場合は，コメントアウト
-\end{verbatim}
-}
-\end{breakbox}
-もう一つは，その直下の2行
-\begin{breakbox}
-{\small
-\begin{verbatim}
-\SUBTtrue %サブタイトル有りの場合 無い場合は，コメントアウト
-%\SUBTfalse %サブタイトル無しの場合 有る場合は，コメントアウト
-\end{verbatim}
-}
-\end{breakbox}
-以下の様に変更する．
-\begin{breakbox}
-{\small
-\begin{verbatim}
-%\SUBTtrue %サブタイトル有りの場合 無い場合は，コメントアウト
-\SUBTfalse %サブタイトル無しの場合 有る場合は，コメントアウト
-\end{verbatim}
-}
-\end{breakbox}
+\subsubsection{Google Place API}
+Google Place API\cite{GoogleMap}はGoogle Mapに登録されている位置情報の検索，詳細を取得する機能を提供している．
+本研究では，旅程の場所データを入力する機能にGoogle Place APIを利用していている．
+APIのPlace Autocompleteとという機能を利用して，場所の名前の検索語から候補を検索する機能を開発した．
+ユーザは候補の中から場所を選択する．モバイルアプリは選択した場所のidを条件にしてPlace Detailsという機能で場所の詳細情報を取得する．
+詳細情報は場所の名称と都道府県名，市区町村名，住所，場所アイコンのurlである．
 
-以上の設定で，表紙と各ページのヘッダ・フッタの情報が自動的に設定され，書式が整えられる．
-\begin{boxnote}
-\LaTeX では 「\verb+%+」はコメントを意味し，この記号から改行コードまでをコメントアウト状態として処理する．
-\end{boxnote}
-であることに注意すること．
+\subsubsection{鉄道データ}
+鉄道データ\cite{TrainData}は国土交通省が提供している鉄道に関するデータである．
+内容は全国の旅客鉄道・軌道の路線や駅について，形状，鉄道区分，事業者，路線名，運営会社等を整備したものである．
+本研究では交通機関の旅程データを入力する機能にこのデータを利用している．
+事前にこのデータから路線名とその路線に属する駅の名称と緯度経度情報を抽出している．
+その緯度経度情報をジオコーディングして，各駅ごとに属する都道府県と市区町村名のデータを作成する．
+入力機能では，まず路線名から駅名の一覧を抽出して表示する．
+そして，駅ごとの都道府県と市区町村名の情報を保存できるようにデータを加工してアプリに内蔵している．
 
-\subsection{スタイルパッケージの動作確認}
-サブタイトルの有り／無しに応じて適切に設定ができた段階で，一度各自の環境下でスタイルパッケージが正常動作することを確認して欲しい．
-正常動作した場合には，本ファイルとほぼ同様の中身で，表紙と各ページのヘッダとフッタが各自の設定した情報が記載されたPDFファイルが出来上がるはずである．
+\subsubsection{位置参照情報}
+位置参照情報\cite{Geocoding}は国土交通省が提供しており，全国の都市計画区域相当範囲を対象に，街区単位の位置情報を整備したデータである．
+位置情報とは代表点の緯度，経度，平面直角座標である．
+ジオコーディングは入力した緯度経度に一番近しい代表点の都道府県名と市区町村名とする．
+このデータを利用して，鉄道データから入手した駅の緯度経度情報からジオコーディングをするのに利用した．
 
-まず，Macintoshの場合について記す．
-各自のホームディレクトリ中のDropboxフォルダ内に，本スタイルパッケージが展開されている場合を前提として記述する．
-\begin{enumerate}
-\item まず，ターミナルを開く
-\item 以下のコマンドを入力し，スタイルパッケージのあるフォルダに移動
-\footnote{ここで　\verb+$+記号は，コマンドプロンプトを表すため，入力しないように．}
-\begin{screen}
-{\small
-\begin{verbatim}
- $ cd ~/Dropbox/Thesis
-\end{verbatim}
-}
-\end{screen}
+\subsubsection{外部ライブラリ}
+Flutterで利用した外部ライブラリを以下に示す．
 
-\item そこで，バッチファイル \verb+mklatex.bat+ を実行
-\begin{screen}
-{\small
-\begin{verbatim}
- $ ./mklatex.bat
-\end{verbatim}
-}
-\end{screen}
+\begin{quote}
+  \begin{itemize}
+    \item google\_maps\_webservice: 0.0.20-nullsafety.5
+    \item cloud\_firestore: 4.8.4
+    \item flutter\_local\_notifications: 15.1.0+1
+  \end{itemize}
+\end{quote}
 
-\item main.pdfファイルが作成され，プレビュー画面が自動で表示される
-\item[\textbf{注}] mklatex.bat が実行できないというようなエラーが出た場合には，最初の一回だけ（次回から不要）以下の命令を入力する
-\begin{screen}
-{\small
-\begin{verbatim}
- $ chmod 755 ./mklatex.bat
-\end{verbatim}
-}
-\end{screen}
-\end{enumerate}
+\subsection{データベース部}
+データベース部で利用した技術に関して述べる．
 
-正常動作しなかった場合には，出来上がった main.log ファイルを宮治に送付して欲しい．
+\subsubsection{Cloud Firestore}
 
-Windowsの場合には，コマンドプロンプトを開き，目的のフォルダに移動し，バッチファイル（winmklatex.bat）を起動する．
-\begin{screen}
-{\small
-\begin{verbatim}
- $ cd c:\My Documents\Dropbox\Thesis
- $ winmklatex.bat
-\end{verbatim}
-}
-\end{screen}
-main.pdfファイルができるので，エクスプローラからファイルをダブルクリックしてAcrobat Reader にて確認して欲しい．
+Cloud Firestore\cite{Firebase}は，モバイルアプリケーションやウェブアプリのデータ保存，同期，照会ができるNoSQLデータベースである．
+本研究では，旅程データを保存するデータベースとして利用した．
+
+\subsection{バッチ処理部}
+バッチ処理部で利用した技術に関して述べる．
+
+\subsubsection{気象庁防災情報XML}
+
+気象庁防災情報XML\cite{KishoutyouXML}は，気象庁が発表する防災情報をXML形式で表現したデータである．\par
+早期注意情報（警報級の可能性）という防災情報のXMLを利用した．
+この情報は雨や風などの災害種類ごとに，警報級の災害の被害に遭う確率を「高」「中」の2段階で提供している．
+警報級の災害とは，気象庁が発表する防災応報の警報基準以上の災害を意味する．
+警報は重大な災害が起こる恐れのある旨を警告して行う予報である．
+大雨に関する警報は警戒レベル3と対応付けられており，日本住民の避難行動の目安となっている．\par
+早期注意情報（警報級の可能性）のXMLには，翌日までの情報と2日先から5日先までの情報の2種類のXMLが存在する．
+翌日までの情報は毎日5時，11時，17時に定期的に発表されていて，2日先から5日先までの情報は毎日11時，17時に定期的に発表されている．
+このXMLデータから災害の影響が予測される地区，災害の可能性，災害の種類の情報を抽出して注意情報とした．
+予報地区は2種類のXMLごとに違う区分で分割されているが，どちらも都道府県かいくつかの市区町村のまとまりを単位としている．\par
+本研究では，これらの情報を定期取得して，フロー情報として利用している．
+
+\subsubsection{cron}
+cronはUNIX系のOSで標準的に利用されているDeamonの一種で，設定したスケジュールに沿って指定されたプログラムを定期実行するものである．
+本研究では，バッチ処理の定期実行のために利用した．
+
+\subsubsection{外部ライブラリ}
+Pythonで利用した外部ライブラリを以下に示す．
+
+\begin{quote}
+  \begin{itemize}
+    \item firebase-admin: 6.2.0
+    \item requests: 2.31.0
+  \end{itemize}
+\end{quote}

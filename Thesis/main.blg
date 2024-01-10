@@ -5,49 +5,50 @@ A level-1 auxiliary file: chap1.aux
 A level-1 auxiliary file: chap2.aux
 A level-1 auxiliary file: chap3.aux
 A level-1 auxiliary file: chap4.aux
-A level-1 auxiliary file: chap5.aux
-A level-1 auxiliary file: appendixA.aux
 The style file: junsrt.bst
 Database file #1: myrefs.bib
-You've used 11 entries,
+Warning--there's a number but no volume in 1520577741138112640
+Warning--there's a number but no volume in 1520856738287330432
+You've used 30 entries,
             2270 wiz_defined-function locations,
-            600 strings with 5453 characters,
-and the built_in function-call counts, 2781 in all, are:
-= -- 202
-> -- 63
-< -- 3
-+ -- 28
-- -- 17
-* -- 70
-:= -- 329
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 9
+            723 strings with 9221 characters,
+and the built_in function-call counts, 8844 in all, are:
+= -- 637
+> -- 249
+< -- 41
++ -- 103
+- -- 73
+* -- 396
+:= -- 1043
+add.period$ -- 90
+call.type$ -- 30
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 185
-empty$ -- 327
-format.name$ -- 34
-if$ -- 700
+cite$ -- 32
+duplicate$ -- 558
+empty$ -- 905
+format.name$ -- 146
+if$ -- 2208
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 7
-newline$ -- 59
-num.names$ -- 13
-pop$ -- 124
+int.to.str$ -- 30
+missing$ -- 17
+newline$ -- 153
+num.names$ -- 30
+pop$ -- 259
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 151
+skip$ -- 469
 stack$ -- 0
-substring$ -- 106
-swap$ -- 42
-text.length$ -- 3
+substring$ -- 411
+swap$ -- 177
+text.length$ -- 41
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 19
-width$ -- 13
-write$ -- 112
-is.kanji.str$ -- 96
+warning$ -- 2
+while$ -- 61
+width$ -- 32
+write$ -- 311
+is.kanji.str$ -- 309
+(There were 2 warnings)
