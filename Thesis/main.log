@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2018.8.24)  10 JAN 2024 15:15
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2018.8.24)  30 JAN 2024 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,44 +552,45 @@ Missing character: There is no ^^a8 in font cmr10!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31] [32] [33]) (./sec33.tex) (./sec34.tex [34]
+[30] [31] [32] [33]) (./sec33.tex [34]) (./sec34.tex
 File: ./fig/system_kagoshima_1.png Graphic file (type bmp)
 <./fig/system_kagoshima_1.png>
+ [35]
 File: ./fig/system_kagoshima_2.png Graphic file (type bmp)
 <./fig/system_kagoshima_2.png>
- [35]
+ [36]
 File: ./fig/system_fukuoka_1.png Graphic file (type bmp)
 <./fig/system_fukuoka_1.png>
- [36]
+ [37]
 File: ./fig/system_fukuoka_2.png Graphic file (type bmp)
 <./fig/system_fukuoka_2.png>
- [37]
+ [38]
 File: ./fig/forecast_kagoshima_1.png Graphic file (type bmp)
 <./fig/forecast_kagoshima_1.png>
- [38]
-File: ./fig/forecast_kagoshima_2.png Graphic file (type bmp)
-<./fig/forecast_kagoshima_2.png>
 
 [39]
+File: ./fig/forecast_kagoshima_2.png Graphic file (type bmp)
+<./fig/forecast_kagoshima_2.png>
+ [40]
 File: ./fig/forecast_fukuoka_1.png Graphic file (type bmp)
 <./fig/forecast_fukuoka_1.png>
- [40]
+ [41]
 File: ./fig/forecast_fukuoka_2.png Graphic file (type bmp)
 <./fig/forecast_fukuoka_2.png>
- [41]
+ [42]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42]) (./sec35.tex [43])) [44]
+[43]) (./sec35.tex [44])) [45]
 \openout2 = `chap4.aux'.
 
  (./chap4.tex
 第4章
-[45
+[46
 
 
 
-]) [46] (./main.bbl [47
+]) [47] (./main.bbl [48
 
 
 ]
@@ -599,7 +600,7 @@ Missing character: There is no ^^91 in font cmr10!
 Missing character: There is no ^^e6 in font cmr10!
 Missing character: There is no ^^bf in font cmr10!
 Missing character: There is no ^^b5 in font cmr10!
- [48]
+ [49]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -608,7 +609,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 154.
-) [49]
+) [50]
 No file main.ind.
 (./main.aux (./chap1.aux) (./chap2.aux) (./chap3.aux) (./chap4.aux))
 
@@ -618,10 +619,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3227 strings out of 493640
  41444 string characters out of 6150528
- 112091 words of memory out of 5000000
+ 111091 words of memory out of 5000000
  6653 multiletter control sequences out of 15000+600000
  26531 words of font info for 117 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  34i,11n,45p,349b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (55 pages, 144128 bytes).
+Output written on main.dvi (56 pages, 145296 bytes).
